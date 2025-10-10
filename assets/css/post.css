@@ -26,3 +26,26 @@
     max-width: 80%;
     height: auto;
 }
+
+.tables-post {
+    text-align: center;
+}
+
+.tables-post table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tables-post th,
+.tables-post td {
+    border: 1px solid var(--accent-primary);
+    padding: 6px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.tables-post th {
+    background-color: var(--accent-primary);
+    color: var(--bg-secondary);
+    font-weight: bold;
+}
