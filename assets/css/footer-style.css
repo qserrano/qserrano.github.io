@@ -1,9 +1,16 @@
 footer {
+  border-top: 1px solid var(--accent-primary);
+  color: var(--text-secondary);
+  padding: 2rem 0;
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--accent-primary);
-  color: var(--text-secondary);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .social-icons {
@@ -27,4 +34,72 @@ footer {
 .footer-content-left, .footer-content-center, .footer-content-right {
     flex: 1;
     margin-bottom: 2rem;
+}
+
+/* Estilos responsive para el footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
   }
+  
+  .footer-content-left, .footer-content-center, .footer-content-right {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .footer-content-left {
+    order: 1;
+  }
+  
+  .footer-content-center {
+    order: 2;
+  }
+  
+  .footer-content-right {
+    order: 3;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons {
+    gap: 1.5rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-container {
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.6rem;
+  }
+  
+  .footer-content-right p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

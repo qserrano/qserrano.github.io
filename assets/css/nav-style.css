@@ -59,3 +59,59 @@ nav a:hover {
 .dropdown:hover .dropdown-toggle {
   transform: scale(1.2);
 }
+
+/* Estilos responsive para la navegación */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  nav a {
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+  
+  nav a:hover {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-toggle {
+    display: block;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-toggle {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
