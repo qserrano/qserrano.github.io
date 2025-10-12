@@ -9,8 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem 4rem;
+    max-width: 100%;
+    padding: 1rem 2rem;
     position: relative;
+    box-sizing: border-box;
 }
 
 .header-site-title {
@@ -20,8 +22,16 @@ header {
     margin: 0;
 }
 
+.header-logos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
 .header-site-title-logo {
     margin-top: 0;
+    vertical-align: middle;
 }
 
 nav a {
@@ -143,7 +153,7 @@ h1.site-title {
 /* Media queries para responsive design */
 @media (max-width: 768px) {
     .header-container {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
         flex-wrap: wrap;
     }
     
@@ -180,7 +190,7 @@ h1.site-title {
     .header-logos {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
     }
     
     .header-site-title-logo {
